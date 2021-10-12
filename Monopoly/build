@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# -sourcepath - указывает на зависимые модули в других пакетах
+# -classpath - Необходимо прописать пути к используемым библиотекам
+
+javac -sourcepath ./src -classpath ./libs/logback-core-1.2.6.jar:./libs/logback-classic-1.2.6.jar:./libs/slf4j-api-1.7.32.jar -d bin ./src/edu/csf/oop/java/monopoli/Main.java
+
+# --create - создание архива
+# -C - где лежат скомпилированные файлы
+
+jar --create --file monopoli.jar --manifest manifest.mf -C ./bin/ .

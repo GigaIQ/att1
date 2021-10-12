@@ -1,0 +1,4 @@
+#!/bin/bash
+
+java -Dlogback.configurationFile=./src/edu/csf/oop/java/monopoli/resources/logback.xml -jar ./monopoli.jar
+

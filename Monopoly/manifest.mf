@@ -1,0 +1,2 @@
+main-class: edu.csf.oop.java.monopoli.Main
+class-path: bin/ libs/logback-core-1.2.6.jar libs/logback-classic-1.2.6.jar libs/slf4j-api-1.7.32.jar
